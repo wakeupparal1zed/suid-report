@@ -46,14 +46,10 @@ chmod 775 /opt/ctf/bin/report.sh
 
 cat >/etc/motd <<'MOTD'
 Добро пожаловать!
-
-Цель: используйте SUID-бинарь и writable-скрипт, чтобы получить флаг.
-Подсказка: ищите SUID и файлы, которые можно изменить.
 MOTD
 
 cat >"$CTF_HOME"/WELCOME.txt <<'EOF2'
-Добро пожаловать!
-Подсказка: проверьте SUID-бинарники и их поведение.
+
 EOF2
 chown ${CTF_USER}:${CTF_USER} "$CTF_HOME"/WELCOME.txt
 

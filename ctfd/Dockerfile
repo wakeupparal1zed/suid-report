@@ -37,8 +37,7 @@ ENV CTF_USER=ctf \
     CTF_PASS=ctf123 \
     FLAG=vsosh{testflag}
 
-RUN printf "\n!\n\n" \
-         "есть короче такие биты...\n" \
+RUN printf "\nДобро пожаловать!\n\n" \
          > /etc/motd
 
 CMD ["/entrypoint.sh"]

@@ -45,7 +45,7 @@ chown root:ctf /opt/ctf/bin/report.sh
 chmod 775 /opt/ctf/bin/report.sh
 
 cat >/etc/motd <<'MOTD'
-ням
+Добро пожаловать!
 MOTD
 
 cat >"$CTF_HOME"/WELCOME.txt <<'EOF2'

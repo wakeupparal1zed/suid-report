@@ -37,8 +37,7 @@ ENV CTF_USER=ctf \
     CTF_PASS=ctf123 \
     FLAG=vsosh{testflag}
 
-RUN printf "\nДобро пожаловать в CTF по SUID!\n\n" \
-         "Ваша задача: использовать SUID-бинарь.\n" \
+RUN printf "\nДобро пожаловать!\n\n" \
          > /etc/motd
 
 CMD ["/entrypoint.sh"]
